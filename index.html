@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>신라대학교</title>
+
+  <!--파비콘-->
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
+  <link rel="icon" href="./favicon.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+
+  <!--HEADER-->
+  <header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="header clearfix">
+                <h1>
+                    <a href="#">
+                        <em><img src="./img/sillalogo.png" alt="MOVIE"></em>
+                </h1>
+                <nav id="mNav">
+                    <h2 class="ir_so">전체메뉴</h2>
+                    <a href="#" class="ham"><span></span></a>
+                </nav>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">영화검색</a></li>
+                        <li><a href="#">영화정보</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <!--VISUAL-->
+  <section class="visual">
+    <div class="inner">
+
+      <div class="title fade-in">
+        <img src="./img/popcon0.png" alt="현재 인기있는 팝콘세트" id="popcon0"/>
+      </div>
+      <div class="fade-in">
+        <img src="./img/cheese_popcon.png" alt="치즈팝콘 2인 세트" class="popcon1 image" />
+        <img src="./img/치즈팝콘 설명.png" alt="치즈팝콘 세트 가격" class="popcon1 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./img/sweet_popcon.png" alt="카라멜팝콘 2인 세트" class="popcon2 image" />
+        <img src="./img/카라멜팝콘 설명.png" alt="카라멜팝콘 세트 가격" class="popcon2 text" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--NOTICE-->
+  <section class="notice">
+    <div class="movie-text">현재 상영중인 영화</div>
+    <!--PROMOTION-->
+    <div class="promotion">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/test_red.png" alt="신작영화1" class="swiper-image"/>
+            <a href="#" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/test_blue.png" alt="신작영화2" class="swiper-image"/>
+            <a href="#" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/test_green.png" alt="신작영화3" class="swiper-image"/>
+            <a href="#" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/test_yellow.png" alt="신작영화4" class="swiper-image"/>
+            <a href="#" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/test_puple.png" alt="신작영화5" class="swiper-image"/>
+            <a href="#" class="btn">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+
+    </div>
+    
+  <!-- moive list -->
+  <section id="movie">
+    <div class="container">
+        <div class="row">
+          <div class="movie-text">이번 달 추천 영화</div>
+            <div class="movie">
+                <div class="movie_chart">
+                    <div class="chart_cont1">
+                      <div>
+                          <div class="poster">
+                              <figure>
+                                  <img src="./img/1603854165304ZZipB.jpg" srcset="./img/poster01@2.jpg 2x"  alt="침묵" class="movie_poster">
+                              </figure>
+                              <div class="rank"><strong>1</strong></div>
+                          </div>
+                          <div class="infor">
+                              <h3><strong>인퍼머스</strong></h3>
+                              <div class="infor_btn">
+                                  <a href="#">상세보기</a>
+                                  <a href="#">예매하기</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="poster">
+                              <figure>
+                                  <img src="./img/poster02.jpg" srcset="./img/poster02@2.jpg 2x"  alt="침묵" class="movie_poster">
+                              </figure>
+                              <div class="rank"><strong>2</strong></div>
+                          </div>
+                          <div class="infor">
+                              <h3><strong>신세계</strong></h3>
+                              <div class="infor_btn">
+                                  <a href="#">상세보기</a>
+                                  <a href="#">예매하기</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="poster">
+                              <figure>
+                                  <img src="./img/poster03.jpg" srcset="./img/poster03@2.jpg 2x"  alt="침묵" class="movie_poster">
+                              </figure>
+                              <div class="rank"><strong>3</strong></div>
+                          </div>
+                          <div class="infor">
+                              <h3><strong>마스터</strong></h3>
+                              <div class="infor_btn">
+                                  <a href="#">상세보기</a>
+                                  <a href="#">예매하기</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="poster">
+                              <figure>
+                                  <img src="./img/poster04.jpg" srcset="./img/poster04@2.jpg 2x"  alt="침묵" class="movie_poster">
+                              </figure>
+                              <div class="rank"><strong>4</strong></div>
+                          </div>
+                          <div class="infor">
+                              <h3><strong>마약왕</strong></h3>
+                              <div class="infor_btn">
+                                  <a href="#">상세보기</a>
+                                  <a href="#">예매하기</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- //chart_cont1-->
+                    <div class="chart_cont2">
+                        <div>
+                            <div class="poster">
+                                <figure>
+                                    <img src="./img/poster05.jpg" srcset="./img/poster05@2.jpg 2x"  alt="침묵" class="movie_poster">
+                                </figure>
+                                <div class="rank"><strong>5</strong></div>
+                            </div>
+                            <div class="infor">
+                                <h3><strong>범죄도시2</strong></h3>
+                                <div class="infor_btn">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">예매하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="poster">
+                                <figure>
+                                    <img src="./img/poster06.jpg" srcset="./img/poster06@2.jpg 2x"  alt="침묵" class="movie_poster">
+                                </figure>
+                                <div class="rank"><strong>6</strong></div>
+                            </div>
+                            <div class="infor">
+                                <h3><strong>괴물</strong></h3>
+                                <div class="infor_btn">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">예매하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="poster">
+                                <figure>
+                                    <img src="./img/poster07.jpg" srcset="./img/poster07@2.jpg 2x"  alt="침묵" class="movie_poster">
+                                </figure>
+                                <div class="rank"><strong>7</strong></div>
+                            </div>
+                            <div class="infor">
+                                <h3><strong>꼭두각시</strong></h3>
+                                <div class="infor_btn">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">예매하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="poster">
+                                <figure>
+                                    <img src="./img/poster08.jpg" srcset="./img/poster08@2.jpg 2x"  alt="침묵" class="movie_poster">
+                                </figure>
+                                <div class="rank"><strong>8</strong></div>
+                            </div>
+                            <div class="infor">
+                                <h3><strong>GETOUT</strong></h3>
+                                <div class="infor_btn">
+                                    <a href="#">상세보기</a>
+                                    <a href="#">예매하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+</html>
