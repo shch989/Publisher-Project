@@ -237,7 +237,7 @@
 
 /* 영화 리스트 */
 .movie {padding: 10px 0;}
-.movie_chart {height: 592px;}
+.movie_chart {height: 1192px;}
 .movie_chart > div {overflow: hidden;}
 .movie_chart > div > div {float: left; width: 292px; height: 592px; margin-right: 18px;}
 .movie_chart > div > div:last-child {margin-right: 0;}

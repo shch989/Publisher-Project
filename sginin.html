@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <!--파비콘-->
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
+  <link rel="icon" href="./favicon.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/signin.css">
+</head>
+<body>
+  <!--HEADER-->
+  <header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="header clearfix">
+                <h1>
+                    <a href="./index.html">
+                        <em><img src="./img/sillalogo.png" alt="MOVIE"></em>
+                </h1>
+                <nav id="mNav">
+                    <h2 class="ir_so">전체메뉴</h2>
+                    <a href="#" class="ham"><span></span></a>
+                </nav>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li><a href="/sginin.html">로그인</a></li>
+                        <li><a href="#">영화검색</a></li>
+                        <li><a href="#">영화정보</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <section class="signin">
+    <h1>로그인</h1>
+    <div class="signin__card">
+      <h2><strong>Welcome!</strong> 영화추천 사이트에 오신 것을 환영합니다.</h2>
+      <form>
+        <input type="text" placeholder="아이디를 입력하세요." required>
+        <input type="password" placeholder="비밀번호를 입력하세요." required>
+        <input type="submit" value="로그인">
+        <p>
+          * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니, <br/>
+          정기적으로 비밀번호를 변경하세요!
+        </p>
+      </form>
+      <div class="actions">
+        <a href="javascript:void(0)">회원가입</a>
+        <a href="javascript:void(0)">아이디 찾기</a>
+        <a href="javascript:void(0)">비밀번호 찾기</a>
+      </div>
+    </div>
+  </section>
+  <!--FOOTER-->
+  <footer>
+    <div class="inner">
+
+        <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="javascript:void(0)">영화 기프티콘 이용약관</a></li>
+        <li><a href="javascript:void(0)">영화표 애매 이용약관</a></li>
+        </ul>
+
+        <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn btn--white">사용자 문의</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+        </div>
+
+        <div class="info">
+        <span>개발자 번호 010-6268-8361</span>
+        <span>(주)신라대학교 컴퓨터 소프트웨어 공학부</span>
+        <span>TEL : 051) 999-5000 / FAX : 051) 999-5000</span>
+        <span>개인정보 책임자 : 문일윤</span>
+        </div>
+
+        <p class="copyright">
+        &copy; <span class="this-year"></span> (C) SILLA UNIVERSITY All rights Reserved.
+        </p>
+    </div>
+  </footer>
+</body>
+</html>
